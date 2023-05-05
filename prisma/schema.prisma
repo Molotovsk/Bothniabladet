@@ -28,3 +28,6 @@ model users {
   updatedAt     DateTime @db.Date
   viewedProfile Int
 }
+
+model customer {
+}
