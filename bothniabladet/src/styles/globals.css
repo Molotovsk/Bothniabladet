@@ -90,3 +90,12 @@ header {
   /*margin-bottom: 400px;*/
   /*margin-left: 100px;*/
 }
+
+.addToCartButton{
+  background-color: #4B9A30;
+  color: black;
+  padding: 10px 40px;
+  border-radius: 30px;
+  /*margin-bottom: 400px;*/
+  /*margin-left: 100px;*/
+}
