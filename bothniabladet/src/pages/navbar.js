@@ -1,12 +1,9 @@
+import React from "react";
 import Image from "next/image";
 import {Inter} from "next/font/google";
 import Link from "next/link";
-//import { Formik, Field, Form } from 'formik';
-import React from "react";
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+const Navbar = () => {
     return (
         <main
             // className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
@@ -28,6 +25,7 @@ export default function Home() {
                             />
                         </Link>
 
+                        <Link href="/startPage">
                         <Image
                             class="basis-1/2 shrink"
                             src={require('/src/BothniabladetHeader.png')}
@@ -36,13 +34,14 @@ export default function Home() {
                             height={"auto"}
                             priority
                         />
+                        </Link>
 
                         <Link href="/cart">
-                            <button className= " text-black font-bold px-10 bg-red-500 bg-clip-content">  
+                            <button className= " text-black font-bold px-16 bg-red-500 bg-clip-content">  
                                 0
                             </button>
                             <Image
-                                class="basis-1/8 shrink"
+                                class="basis-1/8 shrink m-5 "
                                 src={require('/src/shoppingCart.png')}
                                 alt="ShoppingCart"
                                 width={50}
@@ -53,37 +52,8 @@ export default function Home() {
                     </div>
                 </header>
             </div>
-
-           <div className="flex flex-col items-center pt-14">
-                <Image
-                    class="basis-1/2 shrink"
-                    src={require('/src/sunset.jpg')}
-                    alt="SunsetExamplePicture"
-                    width={700}
-                    height={300}
-                    priority
-                />
-            </div>    
-
-            <div className="flex flex-col items-center pt-10">
-                <h1 className="text-2xl">
-                    Bildnamn
-                </h1>
-            </div>
-            <div className="flex flex-row justify-center items-center h-56">
-                <Link href="/startPage">
-                
-                    <div className="p-5">
-                        <button className="addToCartButton" type="submit">
-                            Tillbaka
-                        </button>
-                    </div>
-                
-                </Link>
-                <button className="addToCartButton" type="submit">
-                            Lägg till i varukorg
-                </button>
-            </div>
-        </main>
+        </main>    
     )
-}
+};
+
+export default Navbar;
