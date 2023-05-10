@@ -25,6 +25,7 @@ const Navbar = () => {
                             />
                         </Link>
 
+                        <Link href="/startPage">
                         <Image
                             class="basis-1/2 shrink"
                             src={require('/src/BothniabladetHeader.png')}
@@ -33,6 +34,7 @@ const Navbar = () => {
                             height={"auto"}
                             priority
                         />
+                        </Link>
 
                         <Link href="/cart">
                             <button className= " text-black font-bold px-16 bg-red-500 bg-clip-content">  
